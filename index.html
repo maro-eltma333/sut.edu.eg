@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUT Student Account Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="https://sut.edu.eg/wp-content/uploads/2025/02/Asset-4-01.svg" alt="SUT Logo">
+            <span>SUT</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Academic</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to SUT Student Portal</h1>
+            <p>Search for your student account and discover your academic journey.</p>
+        </div>
+    </section>
+    <main>
+        <section class="card search-card">
+            <h2>Search Student</h2>
+            <label for="student-code">Enter Student Code:</label>
+            <input type="text" id="student-code" placeholder="e.g. 4456874601">
+            <button onclick="searchStudent()">Search</button>
+            <section id="student-info" class="student-info hidden">
+                <h3>Student Information</h3>
+                <ul>
+                    <li><strong>Name:</strong> <span id="student-name"></span></li>
+                    <li><strong>Number:</strong> <span id="student-number"></span></li>
+                    <li><strong>Faculty:</strong> <span id="student-faculty"></span></li>
+                    <li><strong>Program:</strong> <span id="student-program"></span></li>
+                    <li><strong>Email:</strong> <span id="student-email"></span></li>
+                    <li><strong>Address:</strong> <span id="student-address"></span></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SU Tech - POLYTECHNIC OF EGYPT</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
